@@ -1,0 +1,390 @@
+@font-face {
+    font-family: Apercu;
+    src: url(assets/Apercu_Regular.otf);     
+}
+
+.question {
+    text-align: left;
+    font-size: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Apercu !important;
+}
+
+body {
+  background-color: #9BD7CF;  
+  background-image: url("assets/novapor-bg.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-text {
+    font-family: Apercu;
+    width: 700px;
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 25px;
+    padding-bottom: 5px;
+    color: #232323;
+}
+
+.question-one {
+    position: fixed;
+    top: calc(50vh - 100px);
+    left: 15vw;
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+
+}
+
+.question-two {
+    position: fixed;
+    top: calc(50vh - 100px);
+    left: 15vw;
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+.question-three {
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: 15vw;
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+.question-four {
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: 15vw; 
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+    appearance: none;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    padding: 0px 0px 8px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    transition: box-shadow 0.1s ease-out 0s;
+    box-shadow: rgba(38, 38, 38, 0.3) 0px 1px;
+    color: #262627;
+}
+
+@media screen and (max-width: 900px) {
+
+.input-text {
+    font-family: Apercu;
+    width: 75vw;
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px !important;
+    font-size: 20px;
+    color: #232323;
+}
+
+.question-one {
+    margin: 0px auto;
+    position: fixed;
+    top: calc(50vh - 100px);
+    left: 10vw;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+.question-two {
+    position: fixed;
+    top: calc(50vh - 100px);
+    left: 10vw;
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+.question-three {
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: 10vw;
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+.question-four {
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: 10vw;
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    text-align: left;
+    background-color: transparent;
+}
+
+textarea {
+    appearance: none;
+    display: block;
+    width: 75vw;
+    font-family: inherit;
+    color: rgb(38, 38, 38);
+    padding: 0px 0px 8px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    resize: vertical;
+}
+
+.nvp-logo {
+    font-size: 40px !important;
+    color: #262627;
+    position: fixed;
+    top: 10px;
+    left: 35px;
+}
+
+.nvp-logo-span {
+    font-size: 20px;
+    color: #5c5c5c;
+    position: fixed;
+    top: 10px;
+    left: 190px;
+}
+}
+
+.nvp-logo {
+    font-size: 40px !important;
+    color: #262627;
+    position: fixed;
+    top: 20px;
+    left: 35px;
+}
+
+.nvp-logo-span {
+    font-size: 20px;
+    color: #5c5c5c;
+    position: fixed;
+    top: 20px;
+    left: 190px;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c5c5c;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c5c5c;
+  opacity: 1; /* Firefox */
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.navigate {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow-up {
+    padding: 2px 5px 0px 5px;
+    background-color: #6B8A75;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.arrow-down {
+    padding: 2px 5px 0px 5px;
+    background-color: #6B8A75;
+    border: none;
+    border-left: 1px solid #607968;
+    border-radius: 0px 5px 4px 0px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+
+.section-two,
+.section-three,
+.section-four {
+  display: none;
+}
+
+.weiter {
+    font-size: 20px;
+    padding: 8px 20px;
+    background-color: #262627;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    max-width: 101px;
+}
+
+.absenden {
+    font-size: 20px;
+    padding: 8px 20px;
+    background-color: #262627;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    max-width: 130px;
+}
+
+ label {
+	 display: flex;
+	 cursor: pointer;
+	 font-weight: 500;
+	 position: relative;
+	 overflow: hidden;
+	 margin-bottom: 0.375em;
+	/* Accessible outline */
+	/* Remove comment to use */
+	/* &:focus-within {
+		 outline: .125em solid $primary-color;
+	}
+	 */
+}
+ label input {
+     display: none;
+	 position: absolute;
+	 left: -9999px;
+}
+ label input:checked + span {
+	 background-color: #789983;
+}
+ label input:checked + span:before {
+	 box-shadow: inset 0 0 0 0.4375em #528368;
+}
+ label span {
+	 display: flex;
+	 align-items: center;
+	 padding: 0.375em 0.75em 0.375em 0.375em;
+	 border-radius: 99em;
+	 transition: 0.25s ease;
+}
+ label span:hover {
+	 background-color: #789983;
+}
+ label span:before {
+	 display: flex;
+	 flex-shrink: 0;
+	 content: "";
+	 background-color: #fff;
+	 width: 1.5em;
+	 height: 1.5em;
+	 border-radius: 50%;
+	 margin-right: 0.375em;
+	 transition: 0.25s ease;
+	 box-shadow: inset 0 0 0 0.125em #528368;
+}
+ .container {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 20px;
+}
+ 
+
+@media screen and (min-width: 900px) {
+
+ textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #00000000;
+}
+
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: #00000000;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+textarea::-webkit-resizer {
+    display: none !important;
+  background-color: #00000000 !important;
+}
+}

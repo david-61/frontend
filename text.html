@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css" type="text/css">
+    <script src="test.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section-one">
+        <div class="question-one">
+            <label class="question">Wie heißt du?</label>
+            <input class="input-text" type="text" placeholder="Gib deinen Namen hier ein:"  class="required"/>
+            <button onclick="scrollToNextSection()" class="weiter" id="nextBtn"><center>Weiter</center></button>
+
+        </div>
+    </section>
+    <section class="section-two">
+        <div class="question-two">
+            <label class="question">Welches Produkt ist betroffen?</label>
+            <input class="input-text" type="text" placeholder="Software und Hardware angeben" class="required"/>
+            <button onclick="scrollToNextSection()" class="weiter" id="nextBtn"><center>Weiter</center></button>
+
+        </div>
+    </section>
+    <section class="section-three">
+        <div class="question-three">
+            <label class="question">Beschreibe das Problem bitte ausführlich.</label>
+            <textarea class="input-text" class="required"></textarea>
+            <span style="font-size: 15px !important;">Ist dein Problem Rekonstruirbar? Ist das Problem öfters aufgetreten? Hat es ein bestimmtes Muster?</span>
+            <button onclick="scrollToNextSection()" class="weiter" id="nextBtn"><center>Weiter</center></button>
+    </section>
+    <section class="section-four">
+        <div class="question-four">
+            <label class="question">Wie wichtig ist das Problem?</label>
+            <label>
+			<input type="radio" name="radio" checked/>
+			<span>Normal</span>
+		</label>
+            <label>
+			<input type="radio" name="radio"/>
+			<span>Hoch</span>
+		</label>
+            <button onclick="scrollToNextSection()" class="absenden" id="nextBtn"><center>Absenden</center></button>
+
+        </div>
+        </div>
+    </section>
+    <div class="navigate">
+        <button onclick="scrollToPrevSection()" class="arrow-up" id="prevBtn"><center><img src="assets/less.svg" alt="arrow up"/></center></button>
+        <button onclick="scrollToNextSection()" class="arrow-down" id="nextBtn"><center><img src="assets/more.svg" alt="arrow down"/></center></button>
+    </div>
+    <div>
+        <span class="nvp-logo-span">IT Support</span>
+        <span class="nvp-logo">Novapor</span>
+    </div>
+</body>
+
+</html>
